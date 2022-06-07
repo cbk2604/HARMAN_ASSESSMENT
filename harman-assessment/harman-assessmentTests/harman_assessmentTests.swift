@@ -39,5 +39,16 @@ class harman_assessmentTests: XCTestCase {
         XCTAssertEqual(stringCalculator.add(numberFromString: "1"), 1)
         XCTAssertEqual(stringCalculator.add(numberFromString: "1,2"), 3)
     }
+    
+    func testAddNumbersFromStringWithMoreNumbers() throws {
+        let stringCalculator = StringCalculator()
+        XCTAssertEqual(stringCalculator.add(numberFromString: "1,2,3"), 6)
+        XCTAssertEqual(stringCalculator.add(numberFromString: "1,2,3,4"), 10)
+        XCTAssertEqual(stringCalculator.add(numberFromString: "1,2,5,8"), 16)
+    }
+    
+    
+    
+    
 
 }

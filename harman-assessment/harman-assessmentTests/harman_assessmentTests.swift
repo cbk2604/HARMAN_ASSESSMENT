@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import harman_assessment
 
 class harman_assessmentTests: XCTestCase {
 
@@ -30,6 +31,13 @@ class harman_assessmentTests: XCTestCase {
         measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testAddNumbersFromSimpleString() throws {
+        let stringCalculator = StringCalculator()
+        XCTAssertEqual(stringCalculator.add(numberFromString: ""), 0)
+        XCTAssertEqual(stringCalculator.add(numberFromString: "1"), 1)
+        XCTAssertEqual(stringCalculator.add(numberFromString: "1,2"), 3)
     }
 
 }

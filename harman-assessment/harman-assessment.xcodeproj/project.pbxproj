@@ -16,6 +16,7 @@
 		7CC5BC6B284F1FD000654B01 /* harman_assessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5BC6A284F1FD000654B01 /* harman_assessmentTests.swift */; };
 		7CC5BC78284F1FDD00654B01 /* harman_assessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5BC77284F1FDD00654B01 /* harman_assessmentUITests.swift */; };
 		7CC5BC7A284F1FDD00654B01 /* harman_assessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5BC79284F1FDD00654B01 /* harman_assessmentUITestsLaunchTests.swift */; };
+		7CC5BC81284F203000654B01 /* StringCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5BC80284F203000654B01 /* StringCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7CC5BC75284F1FDD00654B01 /* harman-assessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "harman-assessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC5BC77284F1FDD00654B01 /* harman_assessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = harman_assessmentUITests.swift; sourceTree = "<group>"; };
 		7CC5BC79284F1FDD00654B01 /* harman_assessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = harman_assessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7CC5BC80284F203000654B01 /* StringCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				7CC5BC50284F1B2900654B01 /* AppDelegate.swift */,
 				7CC5BC52284F1B2900654B01 /* SceneDelegate.swift */,
 				7CC5BC54284F1B2900654B01 /* ViewController.swift */,
+				7CC5BC80284F203000654B01 /* StringCalculator.swift */,
 				7CC5BC56284F1B2900654B01 /* Main.storyboard */,
 				7CC5BC59284F1B2A00654B01 /* Assets.xcassets */,
 				7CC5BC5B284F1B2A00654B01 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				7CC5BC55284F1B2900654B01 /* ViewController.swift in Sources */,
 				7CC5BC51284F1B2900654B01 /* AppDelegate.swift in Sources */,
+				7CC5BC81284F203000654B01 /* StringCalculator.swift in Sources */,
 				7CC5BC53284F1B2900654B01 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

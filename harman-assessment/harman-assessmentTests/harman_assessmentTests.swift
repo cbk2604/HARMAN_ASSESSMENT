@@ -47,6 +47,14 @@ class harman_assessmentTests: XCTestCase {
         XCTAssertEqual(stringCalculator.add(numberFromString: "1,2,5,8"), 16)
     }
     
+    func testAddNumbersFromStringWithNewLines() throws {
+        let stringCalculator = StringCalculator()
+        XCTAssertEqual(stringCalculator.add(numberFromString: ""), 0)
+        XCTAssertEqual(stringCalculator.add(numberFromString: "1"), 1)
+        XCTAssertEqual(stringCalculator.add(numberFromString: "1\n2"), 3)
+        XCTAssertEqual(stringCalculator.add(numberFromString: "1\n2,3,4"), 10)
+    }
+    
     
     
     

@@ -41,20 +41,29 @@ class harman_assessmentTests: XCTestCase {
     }
     
     func testAddNumbersFromStringWithMoreNumbers() throws {
-        let stringCalculator = StringCalculator()
         XCTAssertEqual(try! stringCalculator.add(numberFromString: "1,2,3"), 6)
         XCTAssertEqual(try! stringCalculator.add(numberFromString: "1,2,3,4"), 10)
         XCTAssertEqual(try! stringCalculator.add(numberFromString: "1,2,5,8"), 16)
     }
     
     func testAddNumbersFromStringWithNewLines() throws {
-        let stringCalculator = StringCalculator()
         XCTAssertEqual(try! stringCalculator.add(numberFromString: ""), 0)
         XCTAssertEqual(try! stringCalculator.add(numberFromString: "1"), 1)
         XCTAssertEqual(try! stringCalculator.add(numberFromString: "1\n2"), 3)
         XCTAssertEqual(try! stringCalculator.add(numberFromString: "1\n2,3,4"), 10)
     }
+    
+    func testSignedNumbers() throws {
+        XCTAssertEqual(try! stringCalculator.add(numberFromString: "1,-2"), 0)
         
+        do {
+            let _ = try stringCalculator.add(numberFromString: "-1,-2,3")
+        } catch StringCalculatorErrors.ContainsSignedNumbers(let signedNumbers) {
+            XCTAssertEqual(signedNumbers, [-1,-2])
+        } catch {
+            
+        }
+    }
     
 
 }

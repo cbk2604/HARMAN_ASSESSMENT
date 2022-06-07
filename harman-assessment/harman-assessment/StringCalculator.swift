@@ -19,12 +19,13 @@ class StringCalculator {
         let numberArray = extractNumbersFromString(input: numberFromString)
         do {
             try validateSignedNumbers(numbers: numberArray)
+            return calculateNumbers(numbers: numberArray)
         } catch StringCalculatorErrors.ContainsSignedNumbers(let signedNumbers) {
             print("negatives not allowed - \(signedNumbers)")
         } catch {
             print("unknown error - \(error)")
         }
-        return calculateNumbers(numbers: numberArray)
+        return 0
     }
     
     private func extractNumbersFromString(input: String) -> [Int] {

@@ -9,6 +9,7 @@ import XCTest
 @testable import harman_assessment
 
 class harman_assessmentTests: XCTestCase {
+    let stringCalculator = StringCalculator()
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -34,29 +35,26 @@ class harman_assessmentTests: XCTestCase {
     }
     
     func testAddNumbersFromSimpleString() throws {
-        let stringCalculator = StringCalculator()
-        XCTAssertEqual(stringCalculator.add(numberFromString: ""), 0)
-        XCTAssertEqual(stringCalculator.add(numberFromString: "1"), 1)
-        XCTAssertEqual(stringCalculator.add(numberFromString: "1,2"), 3)
+        XCTAssertEqual(try! stringCalculator.add(numberFromString: ""), 0)
+        XCTAssertEqual(try! stringCalculator.add(numberFromString: "1"), 1)
+        XCTAssertEqual(try! stringCalculator.add(numberFromString: "1,2"), 3)
     }
     
     func testAddNumbersFromStringWithMoreNumbers() throws {
         let stringCalculator = StringCalculator()
-        XCTAssertEqual(stringCalculator.add(numberFromString: "1,2,3"), 6)
-        XCTAssertEqual(stringCalculator.add(numberFromString: "1,2,3,4"), 10)
-        XCTAssertEqual(stringCalculator.add(numberFromString: "1,2,5,8"), 16)
+        XCTAssertEqual(try! stringCalculator.add(numberFromString: "1,2,3"), 6)
+        XCTAssertEqual(try! stringCalculator.add(numberFromString: "1,2,3,4"), 10)
+        XCTAssertEqual(try! stringCalculator.add(numberFromString: "1,2,5,8"), 16)
     }
     
     func testAddNumbersFromStringWithNewLines() throws {
         let stringCalculator = StringCalculator()
-        XCTAssertEqual(stringCalculator.add(numberFromString: ""), 0)
-        XCTAssertEqual(stringCalculator.add(numberFromString: "1"), 1)
-        XCTAssertEqual(stringCalculator.add(numberFromString: "1\n2"), 3)
-        XCTAssertEqual(stringCalculator.add(numberFromString: "1\n2,3,4"), 10)
+        XCTAssertEqual(try! stringCalculator.add(numberFromString: ""), 0)
+        XCTAssertEqual(try! stringCalculator.add(numberFromString: "1"), 1)
+        XCTAssertEqual(try! stringCalculator.add(numberFromString: "1\n2"), 3)
+        XCTAssertEqual(try! stringCalculator.add(numberFromString: "1\n2,3,4"), 10)
     }
-    
-    
-    
+        
     
 
 }

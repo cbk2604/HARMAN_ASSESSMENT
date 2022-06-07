@@ -12,7 +12,7 @@ enum StringCalculatorErrors: Error {
 }
 
 class StringCalculator {
-    public func add(numberFromString: String) -> Int {
+    public func add(numberFromString: String) throws -> Int {
         guard !numberFromString.isEmpty else {
             return 0
         }

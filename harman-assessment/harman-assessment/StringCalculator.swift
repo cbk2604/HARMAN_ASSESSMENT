@@ -7,23 +7,45 @@
 
 import Foundation
 
+enum StringCalculatorErrors: Error {
+    case ContainsSignedNumbers(numbers: [Int])
+}
+
 class StringCalculator {
     public func add(numberFromString: String) -> Int {
         guard !numberFromString.isEmpty else {
             return 0
         }
         let numberArray = extractNumbersFromString(input: numberFromString)
-        return numberArray.reduce(0) { partialResult, value in
-            if value > 1000 {
-                return partialResult
-            }
-            return partialResult + value
+        do {
+            try validateSignedNumbers(numbers: numberArray)
+        } catch StringCalculatorErrors.ContainsSignedNumbers(let signedNumbers) {
+            print("negatives not allowed - \(signedNumbers)")
+        } catch {
+            print("unknown error - \(error)")
         }
+        return calculateNumbers(numbers: numberArray)
     }
     
     private func extractNumbersFromString(input: String) -> [Int] {
         let charSet = CharacterSet(charactersIn: ",;\n")
         let numberArray = input.components(separatedBy: charSet)
         return numberArray.map{Int($0) ?? 0}
+    }
+    
+    private func validateSignedNumbers(numbers: [Int]) throws {
+        let signedNumbers = numbers.filter{$0 < 0}
+        if signedNumbers.count > 0 {
+            throw StringCalculatorErrors.ContainsSignedNumbers(numbers: signedNumbers)
+        }
+    }
+    
+    private func calculateNumbers(numbers: [Int]) -> Int {
+        return numbers.reduce(0) { partialResult, value in
+            if value > 1000 {
+                return partialResult
+            }
+            return partialResult + value
+        }
     }
 }

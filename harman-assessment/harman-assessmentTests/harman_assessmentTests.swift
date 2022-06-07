@@ -65,5 +65,11 @@ class harman_assessmentTests: XCTestCase {
         }
     }
     
+    func testIgnoringNumbersBiggerThanThousand() throws {
+        XCTAssertEqual(try! stringCalculator.add(numberFromString: "2,1001"), 2)
+        XCTAssertEqual(try! stringCalculator.add(numberFromString: "2,1234"), 2)
+        XCTAssertEqual(try! stringCalculator.add(numberFromString: "2,101"), 103)
+    }
+    
 
 }

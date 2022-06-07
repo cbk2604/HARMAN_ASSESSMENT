@@ -12,10 +12,18 @@ class StringCalculator {
         guard !numberFromString.isEmpty else {
             return 0
         }
-        let charSet = CharacterSet(charactersIn: ",;\n")
-        let numberArray = numberFromString.components(separatedBy: charSet)
+        let numberArray = extractNumbersFromString(input: numberFromString)
         return numberArray.reduce(0) { partialResult, value in
-            partialResult + (Int(value) ?? 0)
+            if value > 1000 {
+                return partialResult
+            }
+            return partialResult + value
         }
+    }
+    
+    private func extractNumbersFromString(input: String) -> [Int] {
+        let charSet = CharacterSet(charactersIn: ",;\n")
+        let numberArray = input.components(separatedBy: charSet)
+        return numberArray.map{Int($0) ?? 0}
     }
 }

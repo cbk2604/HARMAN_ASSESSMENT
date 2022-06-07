@@ -13,7 +13,27 @@
 		7CC5BC58284F1B2900654B01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC5BC56284F1B2900654B01 /* Main.storyboard */; };
 		7CC5BC5A284F1B2A00654B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC5BC59284F1B2A00654B01 /* Assets.xcassets */; };
 		7CC5BC5D284F1B2A00654B01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC5BC5B284F1B2A00654B01 /* LaunchScreen.storyboard */; };
+		7CC5BC6B284F1FD000654B01 /* harman_assessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5BC6A284F1FD000654B01 /* harman_assessmentTests.swift */; };
+		7CC5BC78284F1FDD00654B01 /* harman_assessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5BC77284F1FDD00654B01 /* harman_assessmentUITests.swift */; };
+		7CC5BC7A284F1FDD00654B01 /* harman_assessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5BC79284F1FDD00654B01 /* harman_assessmentUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CC5BC6C284F1FD000654B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CC5BC45284F1B2800654B01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CC5BC4C284F1B2900654B01;
+			remoteInfo = "harman-assessment";
+		};
+		7CC5BC7B284F1FDD00654B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CC5BC45284F1B2800654B01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CC5BC4C284F1B2900654B01;
+			remoteInfo = "harman-assessment";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7CC5BC4D284F1B2900654B01 /* harman-assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "harman-assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +44,29 @@
 		7CC5BC59284F1B2A00654B01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CC5BC5C284F1B2A00654B01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CC5BC5E284F1B2A00654B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC5BC68284F1FD000654B01 /* harman-assessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "harman-assessmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC5BC6A284F1FD000654B01 /* harman_assessmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = harman_assessmentTests.swift; sourceTree = "<group>"; };
+		7CC5BC75284F1FDD00654B01 /* harman-assessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "harman-assessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC5BC77284F1FDD00654B01 /* harman_assessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = harman_assessmentUITests.swift; sourceTree = "<group>"; };
+		7CC5BC79284F1FDD00654B01 /* harman_assessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = harman_assessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7CC5BC4A284F1B2900654B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC5BC65284F1FD000654B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC5BC72284F1FDD00654B01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				7CC5BC4F284F1B2900654B01 /* harman-assessment */,
+				7CC5BC69284F1FD000654B01 /* harman-assessmentTests */,
+				7CC5BC76284F1FDD00654B01 /* harman-assessmentUITests */,
 				7CC5BC4E284F1B2900654B01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				7CC5BC4D284F1B2900654B01 /* harman-assessment.app */,
+				7CC5BC68284F1FD000654B01 /* harman-assessmentTests.xctest */,
+				7CC5BC75284F1FDD00654B01 /* harman-assessmentUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +108,23 @@
 				7CC5BC5E284F1B2A00654B01 /* Info.plist */,
 			);
 			path = "harman-assessment";
+			sourceTree = "<group>";
+		};
+		7CC5BC69284F1FD000654B01 /* harman-assessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CC5BC6A284F1FD000654B01 /* harman_assessmentTests.swift */,
+			);
+			path = "harman-assessmentTests";
+			sourceTree = "<group>";
+		};
+		7CC5BC76284F1FDD00654B01 /* harman-assessmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7CC5BC77284F1FDD00654B01 /* harman_assessmentUITests.swift */,
+				7CC5BC79284F1FDD00654B01 /* harman_assessmentUITestsLaunchTests.swift */,
+			);
+			path = "harman-assessmentUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +147,42 @@
 			productReference = 7CC5BC4D284F1B2900654B01 /* harman-assessment.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7CC5BC67284F1FD000654B01 /* harman-assessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC5BC6E284F1FD000654B01 /* Build configuration list for PBXNativeTarget "harman-assessmentTests" */;
+			buildPhases = (
+				7CC5BC64284F1FD000654B01 /* Sources */,
+				7CC5BC65284F1FD000654B01 /* Frameworks */,
+				7CC5BC66284F1FD000654B01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CC5BC6D284F1FD000654B01 /* PBXTargetDependency */,
+			);
+			name = "harman-assessmentTests";
+			productName = "harman-assessmentTests";
+			productReference = 7CC5BC68284F1FD000654B01 /* harman-assessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CC5BC74284F1FDD00654B01 /* harman-assessmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC5BC7D284F1FDD00654B01 /* Build configuration list for PBXNativeTarget "harman-assessmentUITests" */;
+			buildPhases = (
+				7CC5BC71284F1FDD00654B01 /* Sources */,
+				7CC5BC72284F1FDD00654B01 /* Frameworks */,
+				7CC5BC73284F1FDD00654B01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CC5BC7C284F1FDD00654B01 /* PBXTargetDependency */,
+			);
+			name = "harman-assessmentUITests";
+			productName = "harman-assessmentUITests";
+			productReference = 7CC5BC75284F1FDD00654B01 /* harman-assessmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +195,14 @@
 				TargetAttributes = {
 					7CC5BC4C284F1B2900654B01 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					7CC5BC67284F1FD000654B01 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 7CC5BC4C284F1B2900654B01;
+					};
+					7CC5BC74284F1FDD00654B01 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 7CC5BC4C284F1B2900654B01;
 					};
 				};
 			};
@@ -116,6 +220,8 @@
 			projectRoot = "";
 			targets = (
 				7CC5BC4C284F1B2900654B01 /* harman-assessment */,
+				7CC5BC67284F1FD000654B01 /* harman-assessmentTests */,
+				7CC5BC74284F1FDD00654B01 /* harman-assessmentUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +234,20 @@
 				7CC5BC5D284F1B2A00654B01 /* LaunchScreen.storyboard in Resources */,
 				7CC5BC5A284F1B2A00654B01 /* Assets.xcassets in Resources */,
 				7CC5BC58284F1B2900654B01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC5BC66284F1FD000654B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC5BC73284F1FDD00654B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +264,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7CC5BC64284F1FD000654B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC5BC6B284F1FD000654B01 /* harman_assessmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC5BC71284F1FDD00654B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC5BC78284F1FDD00654B01 /* harman_assessmentUITests.swift in Sources */,
+				7CC5BC7A284F1FDD00654B01 /* harman_assessmentUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CC5BC6D284F1FD000654B01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CC5BC4C284F1B2900654B01 /* harman-assessment */;
+			targetProxy = 7CC5BC6C284F1FD000654B01 /* PBXContainerItemProxy */;
+		};
+		7CC5BC7C284F1FDD00654B01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CC5BC4C284F1B2900654B01 /* harman-assessment */;
+			targetProxy = 7CC5BC7B284F1FDD00654B01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7CC5BC56284F1B2900654B01 /* Main.storyboard */ = {
@@ -338,6 +488,76 @@
 			};
 			name = Release;
 		};
+		7CC5BC6F284F1FD000654B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VFH3G967RD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sss.harman-assessmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/harman-assessment.app/harman-assessment";
+			};
+			name = Debug;
+		};
+		7CC5BC70284F1FD000654B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VFH3G967RD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sss.harman-assessmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/harman-assessment.app/harman-assessment";
+			};
+			name = Release;
+		};
+		7CC5BC7E284F1FDD00654B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VFH3G967RD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sss.harman-assessmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "harman-assessment";
+			};
+			name = Debug;
+		};
+		7CC5BC7F284F1FDD00654B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VFH3G967RD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sss.harman-assessmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "harman-assessment";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +575,24 @@
 			buildConfigurations = (
 				7CC5BC62284F1B2A00654B01 /* Debug */,
 				7CC5BC63284F1B2A00654B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC5BC6E284F1FD000654B01 /* Build configuration list for PBXNativeTarget "harman-assessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC5BC6F284F1FD000654B01 /* Debug */,
+				7CC5BC70284F1FD000654B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC5BC7D284F1FDD00654B01 /* Build configuration list for PBXNativeTarget "harman-assessmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC5BC7E284F1FDD00654B01 /* Debug */,
+				7CC5BC7F284F1FDD00654B01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
